@@ -2,7 +2,7 @@
 title: "[GarisMiring-an8] Lorem Ipsum dolor Sit Amet - 01 [BD][h264-720p AAC][00000001].mkv"
 date: 2018-02-25T12:01:05+07:00
 num: 1
-size: "12"
+size: "12M"
 type: "post"
 dl:
   - name: "GDrive"
