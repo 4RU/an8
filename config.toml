@@ -1,7 +1,2 @@
-baseURL = "https://an8.netlify.com/"
 title = "{\\an8} Daftar Proyek"
-desc = "Aku tahu kalian suka yang cepat-cepat, 'kan?"
-
-[params]
-  headerimg = "/img/lul.jpg"
-  desc = "Aku tahu kalian suka yang cepat-cepat, 'kan?"
+baseURL = "https://an8.netlify.com/"

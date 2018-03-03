@@ -5,8 +5,8 @@ media_folder: "static/img"
 public_folder: "img"
 
 collections:
-  - name: "post" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
+  - label: "Post" # Used in the UI
+    name: "post" # Used in routes, e.g., /admin/collections/blog
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -22,3 +22,19 @@ collections:
         fields:
           - {label: "Site Name", name: "name", widget: "string"}
           - {label: "URL", name: "url", widget: "string"}
+  - label: "Settings"
+    name: "settings"
+    files:
+      - label: "Site Settings"
+        name: "sitesettings"
+        file: "config.toml"
+        extension: "toml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Site URL", name: "baseURL", widget: "string"}
+      - label: "Asset Settings"
+        name: "assetsettings"
+        file: "data/settings.yml"
+        fields:
+          - {label: "Header Image", name: "headerimg", widget: "image"}
+          - {label: "Site Description", name: "desc", widget: "string"}
