@@ -33,3 +33,8 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/hugo,sass,windows
 
 src/
+node_modules/
+serverless-atomic-algolia/
+.env
+package-lock.json
+package.json

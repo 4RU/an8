@@ -1,2 +1,14 @@
 title = "{\\an8} Daftar Proyek"
 baseURL = "https://an8.netlify.com/"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "date", "publishdate", "permalink"]
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
