@@ -43,6 +43,7 @@
   </div>
   {{- partial "footer.html" . -}}
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
   <script>
     $(document).ready(function(){
       $(".item").click(function(){
@@ -60,26 +61,6 @@
         }
       });
     }
-  </script>
-  <script>
-    const search = instantsearch(options);
-
-    // initialize SearchBox
-    search.addWidget(
-      instantsearch.widgets.searchBox({
-        container: '#search-box',
-        placeholder: 'Search for products'
-      })
-    );
-
-    // initialize hits widget
-    search.addWidget(
-      instantsearch.widgets.hits({
-        container: '#hits'
-      })
-    );
-
-    search.start();
   </script>
 </body>
 </html>
